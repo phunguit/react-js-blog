@@ -13,21 +13,21 @@ class Carousel extends Component {
                 </ol>
                 <div className="carousel-inner" role="listbox">
                     <div className="carousel-item active">
-                        <img className="d-block img-fluid w-100" src="img/slide-1.jpg" alt />
+                        <img className="d-block img-fluid w-100" src="img/slide-1.jpg" />
                         <div className="carousel-caption d-none d-md-block">
                         <h3 className="text-shadow">First Slide</h3>
                         <p className="text-shadow">This is the caption for the first slide.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block img-fluid w-100" src="img/slide-2.jpg" alt />
+                        <img className="d-block img-fluid w-100" src="img/slide-2.jpg" />
                         <div className="carousel-caption d-none d-md-block">
                         <h3 className="text-shadow">Second Slide</h3>
                         <p className="text-shadow">This is the caption for the second slide.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img className="d-block img-fluid w-100" src="img/slide-3.jpg" alt />
+                        <img className="d-block img-fluid w-100" src="img/slide-3.jpg" />
                         <div className="carousel-caption d-none d-md-block">
                         <h3 className="text-shadow">Third Slide</h3>
                         <p className="text-shadow">This is the caption for the third slide.</p>
