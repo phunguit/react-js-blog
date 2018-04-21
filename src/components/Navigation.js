@@ -18,9 +18,9 @@ var routesMenu = [
         name: 'Blog'
     },
     {
-        to: '/contact',
+        to: '/user',
         exact: true,
-        name: 'Contact'
+        name: 'Login'
     }
 ];
 
