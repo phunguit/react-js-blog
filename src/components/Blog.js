@@ -1,7 +1,16 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Redirect } from 'react-router';
 
 class Blog extends Component {
   render() {
+    var { user } = this.props;
+    
+    if(!user.isLogin) {
+        
+        return <Redirect push to="/user"/>
+    }
+
     return (
         <div className="bg-faded p-4 my-4">
             <div className="card card-inverse">
@@ -18,4 +27,11 @@ class Blog extends Component {
   }
 }
 
-export default Blog;
+var mapStateToProps = (state) => {
+    var { user } = state;
+    return {
+        user
+    }
+}
+
+export default connect(mapStateToProps)(Blog);

@@ -25,17 +25,17 @@ const user = (state = defaultState, action) => {
                     username
                 }
             }
-            return [...state];
+            return state;
 
         case Types.LOGOUT:
             state = {
                 isLogin: false,
                 username: null
             }
-            return [...state];
+            return state;
             
         default:
-            return [...state];
+            return state;
     }
 
 }
